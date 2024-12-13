@@ -36,7 +36,7 @@
 <body>
 	<jsp:include page="navbar.jsp"></jsp:include>
 
-	
+
 	<section class="vh-100 bg-image"
 		style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
 		<div class="mask d-flex align-items-center h-100 gradient-custom-3">
@@ -51,7 +51,7 @@
 								<form action="update-product" method="post">
 
 									<div data-mdb-input-init class="form-outline mb-4">
-										<input type="text" name="name" id="form3Example1cg"
+										<input type="text" name="pid" id="form3Example1cg"
 											class="form-control form-control-lg" value="${p.pid}" />
 									</div>
 									<div data-mdb-input-init class="form-outline mb-4">

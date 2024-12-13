@@ -83,22 +83,20 @@ public class ProductDao {
 
 	public String updateProduct(Product product) {
 		String res = null;
-		
-		
-		 try {
-			 
-				Session openSession = sessionfactory.openSession();
-				Transaction tx = openSession.beginTransaction();
-				openSession.saveOrUpdate(product);
-				res="Product Updated Successfully";
-				tx.commit();
-				openSession.close();
-			
+
+		try {
+
+			Session openSession = sessionfactory.openSession();
+			Transaction tx = openSession.beginTransaction();
+			openSession.saveOrUpdate(product);
+			res = "Product Updated Successfully";
+			tx.commit();
+			openSession.close();
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			res="Something Went Wrong";
+			res = "Something Went Wrong";
 		}
-	
 
 		return res;
 	}
