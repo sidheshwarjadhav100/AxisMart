@@ -52,7 +52,7 @@
 
 									<div data-mdb-input-init class="form-outline mb-4">
 										<input type="text" name="pid" id="form3Example1cg"
-											class="form-control form-control-lg" value="${p.pid}" />
+											class="form-control form-control-lg" readonly="readonly" value="${p.pid}" />
 									</div>
 									<div data-mdb-input-init class="form-outline mb-4">
 										<input type="text" name="name" id="form3Example1cg"

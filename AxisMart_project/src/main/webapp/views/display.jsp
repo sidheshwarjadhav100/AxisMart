@@ -36,8 +36,8 @@
 					<td>${p.price}</td>
 					<td>${p.quantity}</td>
 					<td>${p.category}</td>
-					<td><a href="view-product?pid=${p.pid}">Update</a> &nbsp; <a
-						href="delete-product?pid=${p.pid}" onclick="alert('product deleted')">Delete</a></td>
+					<td><a href="view-product?pid=${p.pid}"class="btn btn-warning" >Update</a> &nbsp; <a
+						href="delete-product?pid=${p.pid}" class="btn btn-danger" onclick="alert('product deleted')">Delete</a></td>
 
 				</tr>
 			</c:forEach>
